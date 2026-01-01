@@ -1,3 +1,5 @@
+import profileImg from '../assets/profile.jpg';
+
 export default function About() {
   return (
     <section id="about" className="section" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '80px', alignItems: 'center' }}>
@@ -19,8 +21,7 @@ export default function About() {
         }}
       >
         <img
-          src="/src/assets/profile.jpg"
-          alt="Profile"
+          src={profileImg} alt="Omkar Chikkodi"
           style={{
             width: "100%",
             height: "100%",
