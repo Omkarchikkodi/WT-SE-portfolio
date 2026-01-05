@@ -258,6 +258,67 @@ h1 {
   color: var(--accent);
 }
 
+.assignment-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.view-link.secondary {
+  opacity: 0.8;
+}
+
+.assignment-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.view-link {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.view-link.secondary {
+  opacity: 0.85;
+}
+
+.view-link.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.modal-content img {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+
+
 /* Ensure responsiveness on smaller mobile screens */
 @media (max-width: 768px) {
   .assignments-section {
